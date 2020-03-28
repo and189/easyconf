@@ -8,8 +8,9 @@ areaname=$1
 modus=$2
 admin=$3
 api=$4
+channelinfo=$5
 channel="$areaname+$modus" 
-channel_info="RemstalmapSupoort+https://t.me/RemstalMap"  
+channel_info="$channelinfo"  
 linkapi=$api"channels.createChannel?data[broadcast]=0&data[title]=$channel&data[about]=$channel_info"
 link=$linkapi
 
