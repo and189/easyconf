@@ -30,20 +30,19 @@ path_IV=/var/www/html/iv/
 ##########################################################################################################################################################################################################
 ###dont touch ###########################################################################################################################################################################################
 
-echo city name ?
+echo welche Region?
 read areaname
-echo  minLat
+echo  minLat?
 read minLat
-echo  maxLat
+echo  maxLat?
 read maxLat
-echo minLon
+echo minLon?
 read minLon
-echo maxLon
+echo maxLon?
 read maxLon
 echo welche fence soll iv script nutzen? 
 read MeinFence
-echo erstelle bot 
-
+echo erstelle channels
 
 
 ./new_channel.sh $areaname  Raid  $admin $api $channel_info
@@ -54,9 +53,11 @@ sleep 3
 sleep 3
 
 chatid_rocket=$(cat Raid.txt | grep  channel_id |awk -F ": "'|'","'' '{ print $2 }' | uniq )
+sleep 2
 chatid_rocket=$(cat Raid.txt | grep  channel_id |awk -F ": "'|'","'' '{ print $2 }' | uniq )
+sleep 2
 chatid_iv=$(cat Raid.txt | grep  channel_id |awk -F ": "'|'","'' '{ print $2 }' | uniq )
-
+sleep 2
 
 #Channel ID's
 
