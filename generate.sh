@@ -40,6 +40,8 @@ echo minLon
 read minLon
 echo maxLon
 read maxLon
+echo welche fence soll iv script nutzen? 
+read MeinFence
 echo erstelle bot 
 
 
@@ -63,7 +65,7 @@ Rocket_chatid=$chatid_rocket
 IV_chatid=$chatid_iv
 
 #Geo
-
+MeinFence=$MeinFence
 areaname=$areaname
 
 minLat=$minLat
