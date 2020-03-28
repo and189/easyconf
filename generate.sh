@@ -13,7 +13,7 @@ password=<dbpw>
 
 #Bot settings
 token=<bot_token>
-api="<http://api_ip>"   ## "http://ip:9503/api/xxx"
+api="<http://api_ip>"   ## "http://ip:9503/api/user/"
 
 #channel setting 
 admin=and1_89
