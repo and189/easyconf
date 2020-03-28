@@ -52,11 +52,11 @@ sleep 3
 ./new_channel.sh $areaname  Rocket  $admin $api $channel_info
 sleep 3
 
-chatid_rocket=$(cat Raid.txt | grep  channel_id |awk -F ": "'|'","'' '{ print $2 }' | uniq )
+chatid_raid=$(cat Raid.txt | grep  channel_id |awk -F ": "'|'","'' '{ print $2 }' | uniq )
 sleep 2
-chatid_rocket=$(cat Raid.txt | grep  channel_id |awk -F ": "'|'","'' '{ print $2 }' | uniq )
+chatid_rocket=$(cat Rocket.txt | grep  channel_id |awk -F ": "'|'","'' '{ print $2 }' | uniq )
 sleep 2
-chatid_iv=$(cat Raid.txt | grep  channel_id |awk -F ": "'|'","'' '{ print $2 }' | uniq )
+chatid_iv=$(cat IV.txt | grep  channel_id |awk -F ": "'|'","'' '{ print $2 }' | uniq )
 sleep 2
 
 #Channel ID's
