@@ -77,9 +77,10 @@ maxLon=$maxLon
 
 
 # generate config's file
-eval "echo \" cat $musterRaid\" > ${path_raid}${areaname}.ini"
-eval "echo \" cat $musterRocket\" > ${path_rocket}${areaname}.ini"
-eval "echo \" cat $musterIV\" > ${path_iv}${areaname}.ini"
+
+eval "echo \"$(cat musterRaid.ini)\" > ${areaname}.ini"
+eval "echo \"$(cat musterRocket.ini)\" > ${areaname}.ini"
+eval "echo \"$(cat musterIV.ini)\" > ${areaname}.ini"
 
 
 
